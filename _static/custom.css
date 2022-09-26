@@ -52,6 +52,13 @@ div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {
     padding-left: 5%;
 }
 
+
+.bd-content {
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+
 /* In-page post lists */
 ul.postlist {
     padding-left: 0;
