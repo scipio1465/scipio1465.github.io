@@ -55,7 +55,7 @@ div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {
 
 .bd-content {
     flex-grow: 1;
-    max-width: 100%;
+    max-width: 1000%;
 }
 
 
