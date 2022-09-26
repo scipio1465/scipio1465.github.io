@@ -36,7 +36,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -50,6 +53,7 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../about/" />
     <link rel="index" title="Index" href="../genindex/" />
@@ -128,8 +132,20 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../projects/">
-  Projects
+ <a class="reference internal nav-link" href="../ds_posts/">
+  DS Posts
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../other_posts/">
+  Other Posts
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../test/">
+  test
  </a>
 </li>
 
@@ -163,12 +179,16 @@
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/choldgrafasdasdasdasd" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+          <a class="nav-link" href="https://twitter.com/DrBocci" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
             <label class="sr-only">Twitter</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://<your-host>@<your-handle>" rel="noopener" target="_blank" title="Mastodon"><span><i class="fab fa-stack-overflow"></i></span>
-            <label class="sr-only">Mastodon</label></a>
+          <a class="nav-link" href="https://www.linkedin.com/in/andreab2" rel="noopener" target="_blank" title="linkedin"><span><i class="fab fa-linkedin"></i></span>
+            <label class="sr-only">linkedin</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://stackoverflow.com/users/10557156/scipio1465" rel="noopener" target="_blank" title="StackOverflow"><span><i class="fab fa-stack-overflow"></i></span>
+            <label class="sr-only">StackOverflow</label></a>
         </li>
       </ul>
       </div>
@@ -189,18 +209,14 @@
 
 <div class="bio-info">
     <div class="name">
-        Andrea Bocci
+        Andrea Bocciione 2
     </div>
     <div class="focusareas">
         Data Science | Statistics | Physics | Ph.D.
     </div>
 
     <div class="whatido">
-      Generalistic Data Scientist, former particle physicist, working at the Lab.
-      I work with <a href="https://2i2c.org">2i2c</a> and
-        <a href="https://jupyter.org">Project Jupyter</a>
-        to build and apply tools in interactive computing for scientific
-        research and education.
+      no sir
     </div>
 </div>
   </div>
@@ -237,7 +253,7 @@
               
 
               <article class="bd-article" role="main">
-                 <div class="section" id="talks">
+                 <div class="tex2jax_ignore mathjax_ignore section" id="talks">
 <h1>Talks<a class="headerlink" href="#talks" title="Permalink to this headline">#</a></h1>
 <p>Below are a few highlighted talks that I have given recently.</p>
 <div class="sphinx-bs container pb-4 docutils">
@@ -331,19 +347,24 @@
               </article>
               
 <!-- Add a comment box underneath the page's content -->
-<script src="https://giscus.app/client.js"
-        data-repo="choldgraf/choldgraf.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk1MTIzNzA1NA=="
-        data-category="Blog comments"
-        data-category-id="DIC_kwDOAw3Qvs4CAV4E"
-        data-mapping="pathname"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://abocci.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
               
@@ -367,7 +388,7 @@
   
   <div class="footer-item">
     <p class="copyright">
-    &copy; Copyright 2022, Andrea Abelianoooo.<br>
+    &copy; Copyright 2022, Andrea Bocci.<br>
 </p>
   </div>
   

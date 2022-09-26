@@ -13,7 +13,7 @@ div.profile-pic img {
 
 .bio-info {
     margin: 1em auto;
-    max-width: 220px;
+    max-width: 2px;
 }
 
 .name {
@@ -48,16 +48,15 @@ ul.ablog-archive {
     padding-bottom: .5em;
 }
 
-div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {
-    padding-left: 5%;
-}
-
 
 .bd-content {
     flex-grow: 1;
-    max-width: 1000%;
+    max-width: 10%;
 }
 
+div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {
+    padding-left: 5%;
+}
 
 /* In-page post lists */
 ul.postlist {

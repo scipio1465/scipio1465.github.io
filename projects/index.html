@@ -5,15 +5,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta property="og:title" content="Projects" />
+<meta property="og:title" content="DS Posts" />
   
 <meta property="og:type" content="website" />
   
 <meta property="og:url" content="projects/" />
   
-<meta property="og:description" content="This page describes some of the major projects that I have worked on over the past and present. Current projects: 2i2c logo The International Interactive Computing Collaboration is a non-profit org..." />
+<meta property="og:description" content="This page collect posts about Data Sciece (on very general terms)" />
   
-    <title>Projects &#8212; Non-Abelian Journey</title>
+    <title>DS Posts &#8212; Non-Abelian Journey</title>
 <script>
   document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
   document.documentElement.dataset.theme = localStorage.getItem("theme") || "light"
@@ -36,7 +36,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -50,11 +53,11 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="../about/" />
     <link rel="index" title="Index" href="../genindex/" />
-    <link rel="search" title="Search" href="../search/" />
-    <link rel="prev" title="About me" href="../about/" /> 
+    <link rel="search" title="Search" href="../search/" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None">  
 <style type="text/css">
@@ -128,9 +131,21 @@
  </a>
 </li>
 
-<li class="toctree-l1 current active nav-item">
- <a class="current reference internal nav-link" href="#">
-  Projects
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../ds_posts/">
+  DS Posts
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../other_posts/">
+  Other Posts
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../test/">
+  test
  </a>
 </li>
 
@@ -164,12 +179,16 @@
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/choldgrafasdasdasdasd" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+          <a class="nav-link" href="https://twitter.com/DrBocci" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
             <label class="sr-only">Twitter</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://<your-host>@<your-handle>" rel="noopener" target="_blank" title="Mastodon"><span><i class="fab fa-stack-overflow"></i></span>
-            <label class="sr-only">Mastodon</label></a>
+          <a class="nav-link" href="https://www.linkedin.com/in/andreab2" rel="noopener" target="_blank" title="linkedin"><span><i class="fab fa-linkedin"></i></span>
+            <label class="sr-only">linkedin</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://stackoverflow.com/users/10557156/scipio1465" rel="noopener" target="_blank" title="StackOverflow"><span><i class="fab fa-stack-overflow"></i></span>
+            <label class="sr-only">StackOverflow</label></a>
         </li>
       </ul>
       </div>
@@ -186,24 +205,14 @@
 
 <!-- Only show if we have sidebars configured, else just a small margin  -->
 <div class="bd-sidebar-primary col-12 col-md-3 bd-sidebar">
-  <div class="sidebar-start-items"><div class="profile-pic"><img src="../_static/profile_ab.png" /></div>
-
-<div class="bio-info">
-    <div class="name">
-        Andrea Bocci
-    </div>
-    <div class="focusareas">
-        Data Science | Statistics | Physics | Ph.D.
-    </div>
-
-    <div class="whatido">
-      Generalistic Data Scientist, former particle physicist, working at the Lab.
-      I work with <a href="https://2i2c.org">2i2c</a> and
-        <a href="https://jupyter.org">Project Jupyter</a>
-        to build and apply tools in interactive computing for scientific
-        research and education.
-    </div>
-</div>
+  <div class="sidebar-start-items"><form class="bd-search d-flex align-items-center" action="../search/" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <div class="bd-toc-item active">
+    
+  </div>
+</nav>
   </div>
   <div class="sidebar-end-items">
   </div>
@@ -218,34 +227,9 @@
     
     <div class="toc-item">
       
-<div class="tocsection onthispage mt-5 pt-1 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
-    <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#current-projects">
-   Current projects
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#past-projects">
-   Past projects
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
+    
 </nav>
     </div>
     
@@ -263,148 +247,13 @@
               
 
               <article class="bd-article" role="main">
-                 <div class="section" id="projects">
-<h1>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">#</a></h1>
-<p>This page describes some of the major projects that I have worked on over the past and present.</p>
+                 <div class="tex2jax_ignore mathjax_ignore section" id="ds-posts">
+<h1>DS Posts<a class="headerlink" href="#ds-posts" title="Permalink to this headline">#</a></h1>
+<p>This page collect posts about Data Sciece (on very general terms)</p>
 <!---
 Testina
 
 --->
-<div class="section" id="current-projects">
-<h2>Current projects<a class="headerlink" href="#current-projects" title="Permalink to this headline">#</a></h2>
-<div class="sphinx-bs pl-0 docutils">
-<div class="row docutils">
-<div class="d-flex col-3 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<a class="reference external image-reference" href="https://2i2c.org"><img alt="2i2c logo" src="https://2i2c.org/media/logo.png" style="width: 30%;" /></a>
-</div>
-</div>
-</div>
-<div class="d-flex col-9 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text">The International Interactive Computing Collaboration is a non-profit organization dedicated to developing and providing infrastructure for interactive computing in research and education. It is an attempt at providing sustainable, vendor-agnostic, and open infrastructure that maximizes flexibility, choice, and productivity for research and education.</p>
-</div>
-</div>
-</div>
-<div class="d-flex col-3 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text"><a class="reference external" href="https://jupyterbook.org"><img alt="Jupyter Book" src="https://jupyterbook.org/_static/logo-wide.svg" /></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-9 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text"><a class="reference external" href="https://jupyterbook.org">Jupyter Book</a> is an open source project for building beautiful, publication-quality books and documents from computational material.</p>
-<p class="card-text">It is stewarded by the <a class="reference external" href="https://executablebooks.org">Executable Books Project</a>, an international collaboration to build open-source tools that facilitate publishing computational narratives using the Jupyter ecosystem.</p>
-</div>
-</div>
-</div>
-<div class="d-flex col-3 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text"><a class="reference external" href="https://mybinder.org"><img alt="The Binder Project" src="https://mybinder.org/static/logo.svg?v=f9f0d927b67cc9dc99d788c822ca21c0" /></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-9 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text">Binder allows you to create custom computing environments that can be
-shared and used by many remote users. It is powered by BinderHub,
-an open-source tool to deploy the Binder service in the cloud.
-One such deployment lives at <a class="reference external" href="https://mybinder.org">mybinder.org</a>,
-where it is run as a free service.</p>
-<p class="card-text">The goal of Binder is to enable people to share reproducible, interactive versions
-of their code with others as easily as possible. It is used by people across
-the scientific, education, and analytics communities.</p>
-</div>
-</div>
-</div>
-<div class="d-flex col-3 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text"><a class="reference external" href="https://jupyterhub.readthedocs.io"><img alt="JupyterHub logo" src="https://jupyterhub.readthedocs.io/en/stable/_static/logo.png" /></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-9 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text">JupyterHub is a tool that lets an administrator serve many user sessions
-from a single machine. The <a class="reference external" href="https://z2jh.jupyter.org">Zero to JupyterHub guide</a> is an instructional and
-opinionated guide to deploying a JupyterHub on Kubernetes, a framework for
-deploying / managing cloud resources.</p>
-<p class="card-text">The Zero to JupyterHub guide was originally written as an extension of
-the technical infrastructure for UC Berkeley’s Data 8 course, and since then
-has become the most popular method for running a JupyterHub at scale in the cloud.</p>
-</div>
-</div>
-</div>
-<div class="d-flex pl-0 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="past-projects">
-<h2>Past projects<a class="headerlink" href="#past-projects" title="Permalink to this headline">#</a></h2>
-<div class="sphinx-bs pl-0 docutils">
-<div class="row docutils">
-<div class="d-flex col-3 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text"><strong>The Docathon</strong></p>
-<a class="reference external image-reference" href="https://github.com/docathon/docathon"><img alt="Docathon logo" src="https://raw.githubusercontent.com/docathon/docathon/master/blog/content/images/logo.svg" width="50%" /></a>
-</div>
-</div>
-</div>
-<div class="d-flex col-9 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text">The Docathon is a week-long global sprint where we focus our efforts on
-improving the state of documentation in the open-source and open-science
-world. This means writing better documentation, building tools,
-and sharing skills.</p>
-<p class="card-text">The first Docathon was held in 2017, and had participants from across the globe.</p>
-<p class="card-text">More than 40 open-source projects contributed, and in total we put out a
-roughly ten-fold increase in contributions to documentation over the week!</p>
-</div>
-</div>
-</div>
-<div class="d-flex col-3 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text"><a class="reference external" href="https://mne.tools"><img alt="MNE-Python logo" src="https://mne.tools/stable/_images/mne_logo.svg" /></a></p>
-</div>
-</div>
-</div>
-<div class="d-flex col-9 docutils">
-<div class="card w-100 border-0 pl-0 docutils">
-<div class="card-body pl-0 docutils">
-<p class="card-text">MNE-Python is open-source software for exploring, visualizing, and analyzing
-human neurophysiological data (MEG, EEG, sEEG, ECoG, etc).</p>
-<p class="card-text">After my PhD, I spent some time generalizing the code I had written for <a class="reference external" href="https://martinos.org/mne/stable/auto_tutorials/plot_receptive_field.html?highlight=receptive%20field">receptive field
-analysis</a>
-of human ECoG data, which now exists in MNE-Python.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="id1">
-<h3><a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
-</div>
-<div class="section" id="id2">
-<h3><a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h3>
-</div>
-</div>
 </div>
 
 <div class="section">
@@ -414,32 +263,30 @@ of human ECoG data, which now exists in MNE-Python.</p>
               </article>
               
 <!-- Add a comment box underneath the page's content -->
-<script src="https://giscus.app/client.js"
-        data-repo="choldgraf/choldgraf.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk1MTIzNzA1NA=="
-        data-category="Blog comments"
-        data-category-id="DIC_kwDOAw3Qvs4CAV4E"
-        data-mapping="pathname"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://abocci.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
               
               <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="../about/" title="previous page">
-      <i class="fas fa-angle-left"></i>
-      <div class="prev-next-info">
-          <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">About me</p>
-      </div>
-  </a>
 </div>
               </footer>
               
@@ -457,7 +304,7 @@ of human ECoG data, which now exists in MNE-Python.</p>
   
   <div class="footer-item">
     <p class="copyright">
-    &copy; Copyright 2022, Andrea Abelianoooo.<br>
+    &copy; Copyright 2022, Andrea Bocci.<br>
 </p>
   </div>
   

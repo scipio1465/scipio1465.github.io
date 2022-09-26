@@ -36,7 +36,10 @@
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css" />
 
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=92025949c220c2e29695">
@@ -50,11 +53,12 @@
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="author" title="About these documents" href="#" />
     <link rel="index" title="Index" href="../genindex/" />
     <link rel="search" title="Search" href="../search/" />
-    <link rel="next" title="Projects" href="../projects/" />
+    <link rel="next" title="DS Posts" href="../ds_posts/" />
     <link rel="prev" title="Andrea Bocci Web Page" href="../" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="docsearch:language" content="None">  
@@ -130,8 +134,20 @@
 </li>
 
 <li class="toctree-l1 nav-item">
- <a class="reference internal nav-link" href="../projects/">
-  Projects
+ <a class="reference internal nav-link" href="../ds_posts/">
+  DS Posts
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../other_posts/">
+  Other Posts
+ </a>
+</li>
+
+<li class="toctree-l1 nav-item">
+ <a class="reference internal nav-link" href="../test/">
+  test
  </a>
 </li>
 
@@ -165,12 +181,16 @@
             <label class="sr-only">GitHub</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://twitter.com/choldgrafasdasdasdasd" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
+          <a class="nav-link" href="https://twitter.com/DrBocci" rel="noopener" target="_blank" title="Twitter"><span><i class="fab fa-twitter-square"></i></span>
             <label class="sr-only">Twitter</label></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://<your-host>@<your-handle>" rel="noopener" target="_blank" title="Mastodon"><span><i class="fab fa-stack-overflow"></i></span>
-            <label class="sr-only">Mastodon</label></a>
+          <a class="nav-link" href="https://www.linkedin.com/in/andreab2" rel="noopener" target="_blank" title="linkedin"><span><i class="fab fa-linkedin"></i></span>
+            <label class="sr-only">linkedin</label></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://stackoverflow.com/users/10557156/scipio1465" rel="noopener" target="_blank" title="StackOverflow"><span><i class="fab fa-stack-overflow"></i></span>
+            <label class="sr-only">StackOverflow</label></a>
         </li>
       </ul>
       </div>
@@ -198,11 +218,11 @@
     </div>
 
     <div class="whatido">
-      Generalistic Data Scientist, former particle physicist, working at the Lab.
-      I work with <a href="https://2i2c.org">2i2c</a> and
-        <a href="https://jupyter.org">Project Jupyter</a>
-        to build and apply tools in interactive computing for scientific
-        research and education.
+      I'm a  generalist Data Scientist, currently working
+      at <a href="https://www.youtube.com/watch?v=07XVXI_xZPA">TheLab</a> - 
+      the innovation engine of
+      <a href="https://www.virginmediao2.co.uk/">Virgin Media O2</a> - 
+        to test and prototype new ideas helping the business to leverage values from its big data assets. 
     </div>
 </div>
   </div>
@@ -271,7 +291,7 @@
               
 
               <article class="bd-article" role="main">
-                 <div class="section" id="about-me">
+                 <div class="tex2jax_ignore mathjax_ignore section" id="about-me">
 <h1>About me<a class="headerlink" href="#about-me" title="Permalink to this headline">#</a></h1>
 <p>I help run <a class="reference external" href="https://2i2c.org">2i2c - the International Interactive Computing Collaboration</a>, a non-profit dedicated to open source infrastructure for interactive computing in research and education.</p>
 <div class="section" id="what-i-do">
@@ -296,7 +316,7 @@
 <li><p class="card-text"><a class="reference external" href="https://mybinder.readthedocs.io/en/latest/about.html">the Binder Project</a> - tools and standards for interactive, reproducible, sharable repositories.</p></li>
 <li><p class="card-text"><a class="reference external" href="https://executablebooks.org">the Executable Books Project</a> - open source tools that facilitate publishing computational narratives using the Jupyter ecosystem.</p></li>
 </ul>
-<p class="card-text">For an idea of the kinds of projects that I work on, check out my <a class="reference external" href="https://github.com/choldgraf"><span class="fab fa-github"></span> GitHub page</a></p>
+<p class="card-text">For an idea of the kinds of projects that I work on, check out my <a class="reference external" href="https://github.com/choldgraf"><span class="fa fa-github,style=fab"></span> GitHub page</a></p>
 </div>
 </div>
 </div>
@@ -428,19 +448,24 @@ check out <a class="reference external" href="https://orcid.org/0000-0002-2391-0
               </article>
               
 <!-- Add a comment box underneath the page's content -->
-<script src="https://giscus.app/client.js"
-        data-repo="choldgraf/choldgraf.github.io"
-        data-repo-id="MDEwOlJlcG9zaXRvcnk1MTIzNzA1NA=="
-        data-category="Blog comments"
-        data-category-id="DIC_kwDOAw3Qvs4CAV4E"
-        data-mapping="pathname"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-theme="light"
-        data-lang="en"
-        crossorigin="anonymous"
-        async>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://abocci.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
 </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
               
@@ -454,10 +479,10 @@ check out <a class="reference external" href="https://orcid.org/0000-0002-2391-0
           <p class="prev-next-title">Andrea Bocci Web Page</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="../projects/" title="next page">
+  <a class='right-next' id="next-link" href="../ds_posts/" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">Projects</p>
+      <p class="prev-next-title">DS Posts</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>
@@ -478,7 +503,7 @@ check out <a class="reference external" href="https://orcid.org/0000-0002-2391-0
   
   <div class="footer-item">
     <p class="copyright">
-    &copy; Copyright 2022, Andrea Abelianoooo.<br>
+    &copy; Copyright 2022, Andrea Bocci.<br>
 </p>
   </div>
   
