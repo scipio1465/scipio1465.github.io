@@ -13,7 +13,7 @@ div.profile-pic img {
 
 .bio-info {
     margin: 1em auto;
-    max-width: 2px;
+    max-width: 220px;
 }
 
 .name {
@@ -48,10 +48,9 @@ ul.ablog-archive {
     padding-bottom: .5em;
 }
 
-
 .bd-content {
     flex-grow: 1;
-    max-width: 1000%;
+    max-width: 100%;
 }
 
 div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {

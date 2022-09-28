@@ -13,11 +13,11 @@ div.profile-pic img {
 
 .bio-info {
     margin: 1em auto;
-    max-width: 2px;
+    max-width: 90%;
 }
 
 .name {
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .focusareas {
@@ -39,19 +39,24 @@ ul.ablog-archive {
     font-size: 1.4em;
 }
 
+.bd-sidebar h1, .bd-sidebar h2, .bd-sidebar h3 {
+    margin-top: .5rem;
+}
+
+
 .bd-sidebar ul {
     padding-left: 0;
     list-style-type: none;
+
 }
 
 .bd-sidebar li {
     padding-bottom: .5em;
 }
 
-
 .bd-content {
-    flex-grow: 1;
-    max-width: 10%;
+    flex-grow: 0;
+    max-width: 100%;
 }
 
 div.bd-sidebar h3, div.bd-sidebar h2, div.bd-sidebar ul {
@@ -113,3 +118,8 @@ div.timeline div.entry.right::after {
 .gsc-reactions {
     margin-top: 1em;
 }
+
+#:root {
+    --pst-font-size-base: 7px;
+}
+
