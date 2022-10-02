@@ -1,8 +1,0 @@
-# DS Posts
-
-This page collect posts about Data Sciece (on very general terms)
-
-<!---
-Testina
-
---->

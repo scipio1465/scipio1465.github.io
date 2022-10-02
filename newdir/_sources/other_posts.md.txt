@@ -1,0 +1,22 @@
+---
+html_theme.sidebar_secondary.remove:
+---
+
+
+# Other Posts
+
+This page collect posts about various topics (mainly math). For Data Science related topics see [DS Posts](ds_posts.md).
+
+## What Am I Reading
+
+This is my book log ([click to enlarge](https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png))
+
+![](https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png)
+
+Open and [interesting page](panels-timeline.md)
+
+
+<!---
+Testina
+
+--->
