@@ -1,0 +1,19 @@
+# Other Posts
+
+This page collect posts about various topics (mainly math). For Data Science related topics see [DS Posts](ds_posts.md).
+
+
+
+```{postlist}
+:list-style: circle
+:category: []
+:format: "{title}"
+:sort:
+```
+
+
+
+<!---
+Testina
+
+--->

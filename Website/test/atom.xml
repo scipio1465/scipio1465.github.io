@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://scipio1465.github.io/newdir</id>
+  <title>Non-Abelian Journey</title>
+  <updated>2022-11-29T21:56:37.521504+00:00</updated>
+  <link href="https://scipio1465.github.io/newdir"/>
+  <link href="https://scipio1465.github.io/newdir/test/atom.xml" rel="self"/>
+  <generator uri="https://ablog.readthedocs.org/" version="0.10.29">ABlog</generator>
+  <entry>
+    <id>https://scipio1465.github.io/newdir/postsab/Baysian-conditional-inference/</id>
+    <title>Follow A Bayesian, Or People Die!</title>
+    <updated>2022-11-26T00:00:00+00:00</updated>
+    <author>
+      <name>Andrea Bocci</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;𝘛𝘩𝘪𝘴 𝘪𝘴 𝘢 𝘸𝘳𝘪𝘵𝘦-𝘶𝘱 𝘰𝘧 𝘴𝘰𝘮𝘦 𝘵𝘩𝘰𝘶𝘨𝘩𝘵𝘴 𝘐 𝘩𝘢𝘥 𝘢𝘵 𝘵𝘩𝘦 𝘣𝘦𝘨𝘪𝘯𝘯𝘪𝘯𝘨 𝘰𝘧 𝘵𝘩𝘦 𝘱𝘢𝘯𝘥𝘦𝘮𝘪𝘤, 𝘭𝘰𝘰𝘬𝘪𝘯𝘨 𝘣𝘢𝘤𝘬 𝘵𝘰 𝘴𝘰𝘮𝘦 𝘢𝘴𝘱𝘦𝘤𝘵𝘴 𝘰𝘧 𝘵𝘩𝘦 𝘍𝘳𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘴𝘵 𝘷𝘴. 𝘉𝘢𝘺𝘦𝘴𝘪𝘢𝘯 𝘥𝘦𝘣𝘢𝘵𝘦. 𝘐’𝘮 𝘯𝘰𝘵 𝘪𝘯 𝘵𝘩𝘦 𝘱𝘰𝘴𝘪𝘵𝘪𝘰𝘯 𝘵𝘰 𝘢𝘥𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘯𝘦𝘸 𝘵𝘰 𝘵𝘩𝘦 𝘵𝘰𝘱𝘪𝘤, 𝘣𝘶𝘵 𝘐 𝘸𝘪𝘭𝘭 𝘶𝘴𝘦 𝘵𝘩𝘦 𝘯𝘦𝘸𝘴 𝘰𝘧 𝘵𝘩𝘢𝘵 𝘵𝘪𝘮𝘦 𝘵𝘰 𝘨𝘪𝘷𝘦 𝘢𝘯 𝘦𝘹𝘢𝘮𝘱𝘭𝘦 𝘸𝘩𝘦𝘳𝘦 𝘍𝘳𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘴𝘵 𝘢𝘯𝘥 𝘉𝘢𝘺𝘦𝘴𝘪𝘢𝘯 𝘨𝘪𝘷𝘦 𝘥𝘪𝘧𝘧𝘦𝘳𝘦𝘯𝘵 𝘢𝘯𝘴𝘸𝘦𝘳𝘴. 𝘐𝘵 𝘪𝘴 𝘢 𝘤𝘭𝘢𝘴𝘴𝘪𝘤 𝘤𝘰𝘯𝘥𝘪𝘵𝘪𝘰𝘯𝘢𝘭 𝘴𝘵𝘢𝘵𝘪𝘴𝘵𝘪𝘤𝘢𝘭 𝘪𝘯𝘧𝘦𝘳𝘦𝘯𝘤𝘦, 𝘦𝘢𝘴𝘺 𝘪𝘧 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘢 𝘥𝘦𝘦𝘱 𝘶𝘯𝘥𝘦𝘳𝘴𝘵𝘢𝘯𝘥𝘪𝘯𝘨 𝘰𝘧 𝘵𝘩𝘦 𝘥𝘪𝘧𝘧𝘦𝘳𝘦𝘯𝘤𝘦𝘴 𝘣𝘦𝘵𝘸𝘦𝘦𝘯 𝘍𝘳𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘴𝘵 𝘢𝘯𝘥 𝘉𝘢𝘺𝘦𝘴𝘪𝘢𝘯 𝘴𝘵𝘢𝘵𝘪𝘴𝘵𝘪𝘤𝘴, 𝘣𝘶𝘵 𝘢𝘭𝘴𝘰 𝘦𝘢𝘴𝘺 𝘵𝘰 𝘨𝘰 𝘸𝘳𝘰𝘯𝘨 𝘪𝘧 𝘺𝘰𝘶 𝘥𝘰𝘯’𝘵.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://scipio1465.github.io/newdir/postsab/Baysian-conditional-inference/" rel="alternate"/>
+    <summary>𝘛𝘩𝘪𝘴 𝘪𝘴 𝘢 𝘸𝘳𝘪𝘵𝘦-𝘶𝘱 𝘰𝘧 𝘴𝘰𝘮𝘦 𝘵𝘩𝘰𝘶𝘨𝘩𝘵𝘴 𝘐 𝘩𝘢𝘥 𝘢𝘵 𝘵𝘩𝘦 𝘣𝘦𝘨𝘪𝘯𝘯𝘪𝘯𝘨 𝘰𝘧 𝘵𝘩𝘦 𝘱𝘢𝘯𝘥𝘦𝘮𝘪𝘤, 𝘭𝘰𝘰𝘬𝘪𝘯𝘨 𝘣𝘢𝘤𝘬 𝘵𝘰 𝘴𝘰𝘮𝘦 𝘢𝘴𝘱𝘦𝘤𝘵𝘴 𝘰𝘧 𝘵𝘩𝘦 𝘍𝘳𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘴𝘵 𝘷𝘴. 𝘉𝘢𝘺𝘦𝘴𝘪𝘢𝘯 𝘥𝘦𝘣𝘢𝘵𝘦. 𝘐’𝘮 𝘯𝘰𝘵 𝘪𝘯 𝘵𝘩𝘦 𝘱𝘰𝘴𝘪𝘵𝘪𝘰𝘯 𝘵𝘰 𝘢𝘥𝘥 𝘢𝘯𝘺𝘵𝘩𝘪𝘯𝘨 𝘯𝘦𝘸 𝘵𝘰 𝘵𝘩𝘦 𝘵𝘰𝘱𝘪𝘤, 𝘣𝘶𝘵 𝘐 𝘸𝘪𝘭𝘭 𝘶𝘴𝘦 𝘵𝘩𝘦 𝘯𝘦𝘸𝘴 𝘰𝘧 𝘵𝘩𝘢𝘵 𝘵𝘪𝘮𝘦 𝘵𝘰 𝘨𝘪𝘷𝘦 𝘢𝘯 𝘦𝘹𝘢𝘮𝘱𝘭𝘦 𝘸𝘩𝘦𝘳𝘦 𝘍𝘳𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘴𝘵 𝘢𝘯𝘥 𝘉𝘢𝘺𝘦𝘴𝘪𝘢𝘯 𝘨𝘪𝘷𝘦 𝘥𝘪𝘧𝘧𝘦𝘳𝘦𝘯𝘵 𝘢𝘯𝘴𝘸𝘦𝘳𝘴. 𝘐𝘵 𝘪𝘴 𝘢 𝘤𝘭𝘢𝘴𝘴𝘪𝘤 𝘤𝘰𝘯𝘥𝘪𝘵𝘪𝘰𝘯𝘢𝘭 𝘴𝘵𝘢𝘵𝘪𝘴𝘵𝘪𝘤𝘢𝘭 𝘪𝘯𝘧𝘦𝘳𝘦𝘯𝘤𝘦, 𝘦𝘢𝘴𝘺 𝘪𝘧 𝘺𝘰𝘶 𝘩𝘢𝘷𝘦 𝘢 𝘥𝘦𝘦𝘱 𝘶𝘯𝘥𝘦𝘳𝘴𝘵𝘢𝘯𝘥𝘪𝘯𝘨 𝘰𝘧 𝘵𝘩𝘦 𝘥𝘪𝘧𝘧𝘦𝘳𝘦𝘯𝘤𝘦𝘴 𝘣𝘦𝘵𝘸𝘦𝘦𝘯 𝘍𝘳𝘦𝘲𝘶𝘦𝘯𝘵𝘪𝘴𝘵 𝘢𝘯𝘥 𝘉𝘢𝘺𝘦𝘴𝘪𝘢𝘯 𝘴𝘵𝘢𝘵𝘪𝘴𝘵𝘪𝘤𝘴, 𝘣𝘶𝘵 𝘢𝘭𝘴𝘰 𝘦𝘢𝘴𝘺 𝘵𝘰 𝘨𝘰 𝘸𝘳𝘰𝘯𝘨 𝘪𝘧 𝘺𝘰𝘶 𝘥𝘰𝘯’𝘵.</summary>
+    <category term="bayesian" label="bayesian"/>
+    <category term="notebook" label="notebook"/>
+    <published>2022-11-26T00:00:00+00:00</published>
+  </entry>
+</feed>

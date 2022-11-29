@@ -1,0 +1,221 @@
+# About me
+
+I am a Full Stack Data Scientist, and a former particle physicist.
+
+It's not unluckily to find me around at Data Science related Meetups and events in London.
+
+## What I do
+
+```{panels}
+:card: border-0 pl-0
+:body: pl-0
+:column: pl-0
+:container: pl-0
+
+---
+:column: col-3
+
+<img src="_static/TheLabLogo.jpg" alt="fishy" width="500px" align="center">
+
+---
+:column: col-9
+
+I currently work in **The Lab** team at [Virgin Media
+O2](https://www.virginmediao2.co.uk/), an Innovation Lab
+cross-functional team that explores new technologies to drive
+innovation across the business.
+
+In my role I leverage the data asset of the company to solve
+challenging problems, increase competitiveness with ML models and
+predicting analytics, mitigate risks and optimize processes working
+horizontally across the business.
+
+New ideas and approaches are channeled in proof of concept solutions that
+eventually can be scaled and expanded to production.
+```
+
+
+## Data Science Interests
+
+<img src="_static/fstack.jpg" alt="fishy" width="600px" align="center">
+
+</br>
+
+I think the back of my _"battlefield"_ laptop speaks for itself. I use
+and experiment all kind of frameworks, tools and libraries. As a
+lifelong Linux user, I give a preference to open source products, but
+in general I take whatever fit best for my purpose. 
+
+Cloud Services
+: I used Azure for some projects, but I've been more on GCP recently
+
+Cluster Computing
+: I worked a lot with PySpark and I love it! I like Dask as well, and
+  experimenting recently with Polars and CuDF.
+
+ML
+: Usually scikit-learn fits the bill, I like LightBGM for tabular
+  supervised learning, otherwise Tensorflow. I also like Bayesian
+  models (pyMC) and such. Working in telecommunication sector I've
+  been looking at Graph ML models and Geospatial  analysis. Plus of
+  course all other big DS topics that you need to know to have fun on
+  Kaggle!
+  
+MLOps:
+: To be honest, once you know the principles (CI/CD, pipelines, etc..)
+  any tool integrated in cloud services are usually good enough. I
+  like MLFlow, and not only because is coming from the Spark
+  ecosystem.
+  
+Other:
+: GAN, synthetic data, differential privacy, explainable AI, and more...
+
+
+
+## Certifications
+
+
+```{image} ../_static/az1.png
+:height: 150
+```
+```{image} ../_static/az2.png
+:height: 150
+```
+
+In general **I don't believe in any form of "_proof_" of knowledge**, be
+it an academic degree or a professional certification. 
+
+But since my company has been generously sponsoring (_a.k.a._ paying) for
+them, well, why not! And I didn't regret it the effort as I learned a lot
+preparing for them! 
+
+They are not a _proof_ of your knowledge, but
+surely they are a _mean_ to improve your knowledge! (although there are
+many other ways and **free** resources to do the same).
+
+
+## Other interests
+
+I probably won't post much on the many other interests I have, with
+few exceptions that fit the case, for example if it's an excuse to do
+a little DS/tech project (as the _live_ Book Reading Logbook plot below)
+
+Also I'll have some _math_ posts, as I want to experiment with latex,
+interactive/executable code, and I have many notes to be used as a source. 
+
+```{image} https://projecteuler.net/profile/guldin.png
+:height: 70
+:align: left
+```
+And last but
+not least because I'm a **puzzle addicted!**
+
+That's my badge on [Project Euler](https://projecteuler.net), an incredible site of challenging computational
+problems with a math-_ish_ spin. Brute force won't get you very far, you need some (actually **a lot** of)  ingenuity to simplify the problem enough to be able to compute
+the solution in a finite time with your laptop.
+
+
+## CV
+
+%%If you want a hard-copy CV, you can find a {download}`reasonably up-to-date CV here </_static/cv.pdf>`.
+If you want a hard-copy CV, [send me an email with a request](mailto:abocci@protonmail.com?subject=CV%20Request)
+
+
+(about:timeline)=
+## A rough timeline
+
+ 
+Below is a rough timeline of what I've been up to over the past several years, inspired again by [Chris Holdgraf implementation with Sphinx](https://chrisholdgraf.com/blog/2020/sphinx-design-timeline/)
+
+````{panels}
+:container: timeline
+:column: col-6 p-0
+:card:
+
+---
+:column: +entry left
+
+**2023**: This **blog** went live
+^^^
+
+Revamped the idea of having a web site, experimenting with static and
+interactive documentation frameworks like Sphinx, MyST, JupyterBook and
+slowly adding contents.
+
+---
+:column: +right
+---
+:column: +left
+
+---
+:column: +entry right
+
+**2019**: Joined **The Lab** at  [Virgin Media
+O2](https://www.virginmediao2.co.uk/),
+^^^
+
+Full stack Data Scientist working across the business to foster
+innovation and bring new technologies into the business. Some area I
+worked on:
+- ML model for customer credit risk
+- Insurance  claim propensity predictions
+- Network performance impact on customer value and churn
+
+---
+:column: +entry left
+
+**2018**: Science to Data Science Fellow
+^^^
+
+Five-week intensive project with Astrazeneca on a proof-of-concept
+prototype of a **Knowledge Graph** database realized with Neo4J
+targeting use cases as drug repositioning
+
+---
+:column: +right
+---
+:column: +left
+---
+:column: +entry right
+
+**2006-2019**: Research Scientist at CERN
+^^^
+
+Worked as part of the ATLAS international collaboration at
+the **Large Hadron Collider** (LHC).
+
+Over the years I covered many roles on data quality, monitoring,
+curation, acquisition, distribution, detector operation, data and
+detector simulation, as well of course statistical analysis of the
+data.
+
+
+---
+:column: +entry left
+
+**2005**: Ph.D in Physics, 
+^^^
+
+Gradated at the Rockefeller University, NY with a thesis on "_Search For Diboson Production With Artificial Neural Network Selection_"
+
+````
+
+
+## What I Am Reading 
+
+I'm an avid reader, of all sort of topics, so my bandwidth for
+non-fiction books is limited. 
+
+If you are curious **on what I'm currently
+reading** and **at which page I am**, here it is:
+
+```{image} https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png
+:target:  https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png
+```
+
+</br></br>
+This plot is updated **nightly** with an _Azure Function_. [In this post](panels-timeline.md) I explain the design and how I have implemented it. 
+
+
+
+

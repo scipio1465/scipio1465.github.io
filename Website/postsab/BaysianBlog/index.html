@@ -1,0 +1,1077 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+<meta property="og:title" content="Bayesian approach" />
+  
+<meta property="og:type" content="website" />
+  
+<meta property="og:url" content="postsab/BaysianBlog/" />
+  
+<meta property="og:description" content="Calculate individual probability, make the sum. Individual probability: Data: m: total tries, q: success. Prediction: n: following tries, k: success. check if the probability add to 1 Frequesntisti..." />
+  
+    <title>Bayesian approach &#8212; Non-Abelian Journey</title>
+  <script>
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1e1de1a1873e13ef5536" rel="stylesheet">
+
+  
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'postsab/BaysianBlog';</script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="author" title="About these documents" href="../../about/" />
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="None"> 
+<link
+  rel="alternate"
+  type="application/atom+xml"
+  href="../../test/atom.xml"
+  title="Non-Abelian Journey"
+/>
+ 
+<style type="text/css">
+  ul.ablog-archive {
+    list-style: none;
+    overflow: auto;
+    margin-left: 0px;
+  }
+  ul.ablog-archive li {
+    float: left;
+    margin-right: 5px;
+    font-size: 80%;
+  }
+  ul.postlist a {
+    font-style: italic;
+  }
+  ul.postlist-style-disc {
+    list-style-type: disc;
+  }
+  ul.postlist-style-none {
+    list-style-type: none;
+  }
+  ul.postlist-style-circle {
+    list-style-type: circle;
+  }
+</style>
+
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../search/" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this site..." aria-label="Search this site..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+    <p class="title logo__title">Non-Abelian Journey</p>
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../about/">
+                        About me
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../ds_posts/">
+                        DS Posts
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../other_posts/">
+                        Other Posts
+                    </a>
+                </li>
+                
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      <div class="navbar-end-item navbar-end__search-button-container">
+        
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/scipio1465/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/DrBocci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/in/andreab2" title="linkedin" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fab fa-linkedin"></i></span>
+            <label class="sr-only">linkedin</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://stackoverflow.com/users/10557156/scipio1465" title="StackOverflow" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fab fa-stack-overflow"></i></span>
+            <label class="sr-only">StackOverflow</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  <div class="search-button-container--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+  </div>
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                <li class="nav-item">
+                    <a class="nav-link" href="../../about/">
+                        About me
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../ds_posts/">
+                        DS Posts
+                    </a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../other_posts/">
+                        Other Posts
+                    </a>
+                </li>
+                
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <span class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" data-toggle="tooltip">
+    <a class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></a>
+    <a class="theme-switch" data-mode="dark"><i class="fa-regular fa-moon"></i></a>
+    <a class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></a>
+</span>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/scipio1465/" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/DrBocci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://www.linkedin.com/in/andreab2" title="linkedin" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fab fa-linkedin"></i></span>
+            <label class="sr-only">linkedin</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://stackoverflow.com/users/10557156/scipio1465" title="StackOverflow" class="nav-link" rel="noopener" target="_blank" data-toggle="tooltip"><span><i class="fab fa-stack-overflow"></i></span>
+            <label class="sr-only">StackOverflow</label></a>
+        </li>
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+    </div>
+    <div class="sidebar-start-items__item">
+<h3>
+  <a href="../../test/category/">Categories</a>
+</h3>
+<ul>
+   
+  <li>
+    <a href="../../test/category/statistics/">statistics (1)</a>
+  </li>
+   
+</ul>
+
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+      </div>
+      <main class="bd-main">
+        
+        
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+            </div>
+            
+            
+
+            <article class="bd-article" role="main">
+               <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">!</span>pwd
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/home/abocci/Dropbox/ML/JupiterNotebooks/sandbox
+</pre></div>
+</div>
+</div>
+</div>
+<section class="tex2jax_ignore mathjax_ignore" id="bayesian-approach">
+<h1>Bayesian approach<a class="headerlink" href="#bayesian-approach" title="Permalink to this headline">#</a></h1>
+<ul class="simple">
+<li><p>Calculate individual probability</p></li>
+<li><p>make the sum</p></li>
+</ul>
+<section id="individual-probability">
+<h2>Individual probability<a class="headerlink" href="#individual-probability" title="Permalink to this headline">#</a></h2>
+<p>Data:</p>
+<ul class="simple">
+<li><p>m: total tries</p></li>
+<li><p>q: success</p></li>
+</ul>
+<p>Prediction:</p>
+<ul class="simple">
+<li><p>n: following tries</p></li>
+<li><p>k: success</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">factorial</span> <span class="k">as</span> <span class="n">f_</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">comb</span>
+<span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">binom</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ProbIntegralValue</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">f_</span><span class="p">(</span><span class="n">a</span><span class="p">)</span><span class="o">*</span><span class="n">f_</span><span class="p">(</span><span class="n">b</span><span class="p">)</span><span class="o">/</span><span class="n">f_</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">BayesianProbability</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    
+    <span class="n">a</span> <span class="o">=</span> <span class="n">q</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">m</span><span class="o">-</span><span class="n">a</span>
+    <span class="n">den</span> <span class="o">=</span> <span class="n">ProbIntegralValue</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    
+    <span class="n">a</span> <span class="o">=</span> <span class="n">k</span><span class="o">+</span><span class="n">q</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">n</span><span class="o">+</span><span class="n">m</span><span class="o">-</span><span class="n">a</span>
+    <span class="n">num</span> <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">)</span><span class="o">*</span><span class="n">ProbIntegralValue</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">num</span><span class="o">/</span><span class="n">den</span>
+
+<span class="k">def</span> <span class="nf">BayesianProbability2</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">p0</span> <span class="o">=</span> <span class="n">BayesianProbability</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    
+    <span class="n">a1</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="n">k</span> <span class="o">+</span> <span class="n">m</span><span class="o">-</span><span class="n">q</span>
+    <span class="n">a2</span> <span class="o">=</span> <span class="n">n</span><span class="o">-</span><span class="n">k</span> <span class="o">-</span><span class="n">q</span>  <span class="c1">## corr</span>
+    
+    <span class="n">corr</span> <span class="o">=</span> <span class="n">a2</span><span class="o">/</span><span class="n">a1</span>
+    
+    <span class="k">return</span> <span class="n">p0</span><span class="o">*</span><span class="n">corr</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">BayesianProbability</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.09090909090909091
+</pre></div>
+</div>
+</div>
+</div>
+<p>check if the probability add to 1</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">n</span><span class="o">=</span><span class="mi">32</span>
+<span class="n">m</span><span class="o">=</span><span class="mi">30</span>
+<span class="n">q</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="n">tot_p</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">tot_p2</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="n">BayesianProbability</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">p1</span> <span class="o">=</span> <span class="n">BayesianProbability2</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+
+    <span class="n">tot_p</span> <span class="o">+=</span> <span class="n">p</span>
+    <span class="n">tot_p2</span> <span class="o">+=</span> <span class="n">p1</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">p1</span><span class="p">,</span> <span class="n">p1</span><span class="o">-</span><span class="n">p</span><span class="p">,</span> <span class="s1">&#39;---&gt;&#39;</span><span class="p">,</span> <span class="n">tot_p</span><span class="p">,</span> <span class="n">tot_p2</span><span class="p">,</span> <span class="n">tot_p2</span><span class="o">-</span><span class="n">tot_p</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 0.49206349206349204 0.25396825396825395 -0.23809523809523808 ---&gt; 0.49206349206349204 0.25396825396825395 -0.23809523809523808
+1 0.25396825396825395 0.12906583398386676 -0.1249024199843872 ---&gt; 0.746031746031746 0.3830340879521207 -0.36299765807962536
+2 0.12906583398386676 0.06453291699193338 -0.06453291699193338 ---&gt; 0.8750975800156128 0.44756700494405405 -0.4275305750715587
+3 0.06453291699193338 0.03171956936891641 -0.03281334762301697 ---&gt; 0.9396304970075462 0.47928657431297045 -0.46034392269457575
+4 0.03171956936891641 0.015312895557407922 -0.016406673811508485 ---&gt; 0.9713500663764626 0.4945994698703784 -0.4767505965060842
+5 0.01531289555740792 0.007253476842982698 -0.008059418714425223 ---&gt; 0.9866629619338705 0.5018529467133611 -0.48481001522050937
+6 0.007253476842982701 0.003367685677099111 -0.00388579116588359 ---&gt; 0.9939164387768532 0.5052206323904602 -0.488695806386393
+7 0.0033676856770991108 0.001530766216863232 -0.0018369194602358787 ---&gt; 0.9972841244539523 0.5067513986073234 -0.4905327258466289
+8 0.001530766216863232 0.0006803405408281031 -0.000850425676035129 ---&gt; 0.9988148906708155 0.5074317391481515 -0.491383151522664
+9 0.0006803405408281031 0.00029524212149144096 -0.00038509841933666213 ---&gt; 0.9994952312116436 0.507726981269643 -0.49176824994200063
+10 0.00029524212149144096 0.00012491012832330193 -0.00017033199316813903 ---&gt; 0.9997904733331351 0.5078518913979663 -0.4919385819351688
+11 0.00012491012832330193 5.143358225077138e-05 -7.347654607253055e-05 ---&gt; 0.9999153834614584 0.5079033249802171 -0.4920120584812413
+12 5.1433582250771394e-05 2.0573432900308558e-05 -3.086014935046284e-05 ---&gt; 0.9999668170437092 0.5079238984131174 -0.4920429186305918
+13 2.0573432900308558e-05 7.977453573589032e-06 -1.2595979326719526e-05 ---&gt; 0.9999873904766095 0.507931875866691 -0.4920555146099185
+14 7.977453573589032e-06 2.991545090095887e-06 -4.985908483493145e-06 ---&gt; 0.9999953679301831 0.5079348674117811 -0.492060500518402
+15 2.991545090095887e-06 1.0820482240772358e-06 -1.909496866018651e-06 ---&gt; 0.9999983594752732 0.5079359494600052 -0.49206241001526796
+16 1.0820482240772358e-06 3.7636459967903854e-07 -7.056836243981974e-07 ---&gt; 0.9999994415234973 0.5079363258246049 -0.4920631156988924
+17 3.763645996790385e-07 1.2545486655967948e-07 -2.50909733119359e-07 ---&gt; 0.999999817888097 0.5079364512794715 -0.4920633666086255
+18 1.254548665596795e-07 3.9917457541716205e-08 -8.55374090179633e-08 ---&gt; 0.9999999433429636 0.5079364911969291 -0.49206345214603453
+19 3.9917457541716205e-08 1.2068068559123503e-08 -2.78493889825927e-08 ---&gt; 0.9999999832604212 0.5079365032649976 -0.49206347999542355
+20 1.2068068559123508e-08 3.4480195883210023e-09 -8.620048970802506e-09 ---&gt; 0.9999999953284897 0.5079365067130172 -0.49206348861547256
+21 3.4480195883210023e-09 9.250784261349032e-10 -2.522941162186099e-09 ---&gt; 0.9999999987765092 0.5079365076380956 -0.49206349113841363
+22 9.25078426134903e-10 2.3126960653372574e-10 -6.938088196011772e-10 ---&gt; 0.9999999997015877 0.5079365078693652 -0.49206349183222253
+23 2.312696065337257e-10 5.336990920009055e-11 -1.7789969733363513e-10 ---&gt; 0.9999999999328573 0.507936507922735 -0.4920634920101222
+24 5.3369909200090536e-11 1.1235770357913796e-11 -4.2134138842176736e-11 ---&gt; 0.9999999999862271 0.5079365079339708 -0.4920634920522563
+25 1.1235770357913798e-11 2.1256862839296375e-12 -9.11008407398416e-12 ---&gt; 0.9999999999974629 0.5079365079360965 -0.49206349206136646
+26 2.125686283929638e-12 3.542810473216063e-13 -1.7714052366080316e-12 ---&gt; 0.9999999999995886 0.5079365079364507 -0.4920634920631378
+27 3.542810473216063e-13 5.06115781888009e-14 -3.0366946913280545e-13 ---&gt; 0.9999999999999428 0.5079365079365014 -0.49206349206344147
+28 5.06115781888009e-14 5.954303316329518e-15 -4.4657274872471384e-14 ---&gt; 0.9999999999999934 0.5079365079365074 -0.4920634920634861
+29 5.954303316329516e-15 5.413003014845015e-16 -5.4130030148450145e-15 ---&gt; 0.9999999999999994 0.5079365079365079 -0.49206349206349154
+30 5.413003014845017e-16 3.3831268842781357e-17 -5.074690326417204e-16 ---&gt; 1.0 0.5079365079365079 -0.4920634920634921
+31 3.3831268842781357e-17 1.091331252992947e-18 -3.273993758978841e-17 ---&gt; 1.0 0.5079365079365079 -0.4920634920634921
+32 1.091331252992947e-18 0.0 -1.091331252992947e-18 ---&gt; 1.0 0.5079365079365079 -0.4920634920634921
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="frequesntistic-approach">
+<h1>Frequesntistic approach<a class="headerlink" href="#frequesntistic-approach" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">FreqProbability</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    
+    <span class="n">p_hat</span> <span class="o">=</span> <span class="n">q</span><span class="o">/</span><span class="n">m</span>
+    <span class="n">prob</span> <span class="o">=</span> <span class="n">binom</span><span class="o">.</span><span class="n">pmf</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">p_hat</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">prob</span>
+    
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">FreqProbability</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.052734375
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="mi">3</span><span class="o">/</span><span class="mi">8</span><span class="p">)</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.052734375
+</pre></div>
+</div>
+</div>
+</div>
+<section id="integral-probablity">
+<h2>Integral probablity<a class="headerlink" href="#integral-probablity" title="Permalink to this headline">#</a></h2>
+<p>Data are the same</p>
+<p>n: still the same (number of follow tries)</p>
+<p>Sum probability to have <strong>at least</strong> k_min sucesss (i.e. <span class="math notranslate nohighlight">\(k\ge k_{min}\)</span>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ProbabilitySum</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span>
+    <span class="n">prob_v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">func</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)])</span>
+    <span class="c1">#print(prob_v)</span>
+    <span class="k">return</span> <span class="n">prob_v</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ProbabilitySum</span><span class="p">(</span><span class="n">FreqProbability</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ProbabilitySum</span><span class="p">(</span><span class="n">BayesianProbability</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ProbabilitySumVector</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">funcsum</span><span class="p">(</span><span class="n">k</span><span class="p">):</span> 
+        <span class="k">return</span> <span class="n">ProbabilitySum</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">)</span>
+    <span class="n">prob_v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">funcsum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)])</span>
+    <span class="k">return</span> <span class="n">prob_v</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">BayesianProbability</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.        , 0.74545455, 0.36363636, 0.09090909])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">FreqProbability</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([1.        , 0.75585938, 0.31640625, 0.05273438])
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">=</span><span class="mi">50</span>
+<span class="n">q</span><span class="o">=</span><span class="mi">15</span>
+
+<span class="n">n</span><span class="o">=</span><span class="mi">50</span>
+<span class="n">aa</span> <span class="o">=</span> <span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">BayesianProbability</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="n">bb</span> <span class="o">=</span> <span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">FreqProbability</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">aa</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">aa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">bb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">aa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">bb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0, 1.00, 1.00, 1.0000
+1, 1.00, 1.00, 1.0000
+2, 1.00, 1.00, 1.0000
+3, 1.00, 1.00, 0.9997
+4, 1.00, 1.00, 0.9990
+5, 1.00, 1.00, 0.9972
+6, 1.01, 1.00, 0.9933
+7, 1.02, 1.00, 0.9862
+8, 1.03, 1.01, 0.9753
+9, 1.06, 1.02, 0.9612
+10, 1.10, 1.04, 0.9460
+11, 1.16, 1.09, 0.9334
+12, 1.25, 1.16, 0.9282
+13, 1.38, 1.29, 0.9357
+14, 1.55, 1.49, 0.9619
+15, 1.78, 1.81, 1.0135
+16, 2.11, 2.32, 1.0991
+17, 2.57, 3.16, 1.2310
+18, 3.22, 4.59, 1.4274
+19, 4.14, 7.11, 1.7165
+20, 5.50, 11.79, 2.1433
+21, 7.53, 20.94, 2.7813
+22, 10.62, 39.86, 3.7526
+23, 15.47, 81.46, 5.2662
+24, 23.26, 178.82, 7.6878
+25, 36.15, 422.02, 11.6754
+26, 58.09, 1071.61, 18.4462
+27, 96.65, 2930.24, 30.3169
+28, 166.64, 8637.10, 51.8293
+29, 298.11, 27473.96, 92.1598
+30, 554.10, 94434.66, 170.4301
+31, 1071.77, 351283.97, 327.7600
+32, 2161.37, 1416671.74, 655.4522
+33, 4553.84, 6206646.18, 1362.9465
+34, 10048.63, 29611556.37, 2946.8261
+35, 23287.99, 154274469.56, 6624.6369
+36, 56867.85, 880586267.46, 15484.7813
+37, 146878.62, 5527845985.36, 37635.4704
+38, 403033.05, 38335771289.15, 95118.1825
+39, 1181138.73, 295284412874.49, 249999.7724
+40, 3720265.72, 2542419691513.89, 683397.3386
+41, 12690219.04, 24660031285662.89, 1943231.3349
+42, 47320853.51, 272031061714392.78, 5748650.7857
+43, 195171360.07, 3453818235368012.00, 17696337.3834
+44, 903837427.75, 51246802752263520.00, 56699137.6756
+45, 4794185925.39, 906721386471962240.00, 189129374.7433
+46, 29936533478.82, 19668050407321403392.00, 656991579.2433
+47, 229059233147.76, 544591908164907827200.00, 2377515635.0655
+48, 2288978114410.75, 20523541552430936227840.00, 8966246301.4480
+49, 33580244780664.34, 1183814931245221640404992.00, 35253314529.9426
+50, 963494715629830.00, 139295556909854077476667392.00, 144573244305.5461
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">=</span><span class="mi">30</span>
+<span class="n">q</span><span class="o">=</span><span class="mi">10</span>
+
+<span class="n">n</span><span class="o">=</span><span class="mi">60</span>
+<span class="n">aa</span> <span class="o">=</span> <span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">BayesianProbability</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="n">bb</span> <span class="o">=</span> <span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">FreqProbability</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">aa</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">aa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">bb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">aa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">bb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0, 1.00, 1.00, 1.0000
+1, 1.00, 1.00, 1.0000
+2, 1.00, 1.00, 1.0000
+3, 1.00, 1.00, 0.9999
+4, 1.00, 1.00, 0.9997
+5, 1.00, 1.00, 0.9992
+6, 1.00, 1.00, 0.9979
+7, 1.00, 1.00, 0.9956
+8, 1.01, 1.00, 0.9914
+9, 1.02, 1.00, 0.9848
+10, 1.03, 1.00, 0.9750
+11, 1.04, 1.00, 0.9618
+12, 1.07, 1.01, 0.9454
+13, 1.10, 1.02, 0.9270
+14, 1.14, 1.04, 0.9087
+15, 1.19, 1.07, 0.8936
+16, 1.27, 1.12, 0.8852
+17, 1.36, 1.20, 0.8879
+18, 1.47, 1.33, 0.9062
+19, 1.62, 1.53, 0.9457
+20, 1.80, 1.82, 1.0133
+21, 2.03, 2.27, 1.1190
+22, 2.33, 2.97, 1.2770
+23, 2.71, 4.09, 1.5099
+24, 3.20, 5.93, 1.8527
+25, 3.84, 9.08, 2.3627
+26, 4.69, 14.70, 3.1346
+27, 5.82, 25.19, 4.3298
+28, 7.34, 45.75, 6.2302
+29, 9.43, 88.10, 9.3425
+30, 12.33, 180.08, 14.6046
+31, 16.43, 391.01, 23.8057
+32, 22.30, 902.54, 40.4683
+33, 30.89, 2216.33, 71.7556
+34, 43.66, 5795.19, 132.7272
+35, 63.05, 16149.59, 256.1429
+36, 93.08, 48012.80, 515.7976
+37, 140.65, 152456.00, 1083.9567
+38, 217.73, 517693.58, 2377.6538
+39, 345.77, 1882604.24, 5444.6161
+40, 564.08, 7343437.73, 13018.3861
+41, 946.81, 30780886.14, 32510.2530
+42, 1638.04, 138930142.17, 84815.1181
+43, 2926.93, 676799249.75, 231232.0120
+44, 5414.21, 3568027125.26, 659012.1499
+45, 10395.59, 20418598702.35, 1964160.4750
+46, 20782.21, 127285007303.49, 6124710.6157
+47, 43412.87, 867852344229.78, 19990670.0549
+48, 95159.96, 6502605034081.05, 68333414.7293
+49, 219968.38, 53841655763024.58, 244769984.4020
+50, 539417.76, 495917391318875.88, 919356811.5239
+51, 1413487.14, 5121686107984453.00, 3623440180.6229
+52, 3993347.11, 59889036146822096.00, 14997202730.5677
+53, 12300953.08, 802537205934519680.00, 65241871948.6651
+54, 41916667.11, 12516069515874951168.00, 298594100597.6650
+55, 161083073.86, 231833794724394008576.00, 1439218840095.9304
+56, 717028082.03, 5244404763360149635072.00, 7314085591343.0361
+57, 3845051350.23, 150879155025844843315200.00, 39239828361892.7109
+58, 26451667994.17, 5886843254439183659302912.00, 222550927818082.7500
+59, 262156004766.05, 350340151034847554202238976.00, 1336380417253801.0000
+60, 4980964090555.01, 42391158275216344257908441088.00, 8510633183563639.0000
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">=</span><span class="mi">35</span>
+<span class="n">q</span><span class="o">=</span><span class="mi">7</span>
+
+<span class="n">n</span><span class="o">=</span><span class="mi">70</span>
+<span class="n">aa</span> <span class="o">=</span> <span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">BayesianProbability</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="n">bb</span> <span class="o">=</span> <span class="n">ProbabilitySumVector</span><span class="p">(</span><span class="n">FreqProbability</span><span class="p">,</span><span class="n">q</span><span class="p">,</span><span class="n">m</span><span class="p">,</span><span class="n">n</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">aa</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">aa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="mi">1</span><span class="o">/</span><span class="n">bb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">aa</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">/</span><span class="n">bb</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="si">:</span><span class="s1">.4f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0, 1.00, 1.00, 1.0000
+1, 1.00, 1.00, 0.9999
+2, 1.00, 1.00, 0.9993
+3, 1.00, 1.00, 0.9975
+4, 1.01, 1.00, 0.9933
+5, 1.02, 1.00, 0.9855
+6, 1.03, 1.00, 0.9732
+7, 1.05, 1.01, 0.9568
+8, 1.09, 1.02, 0.9381
+9, 1.14, 1.05, 0.9208
+10, 1.20, 1.09, 0.9101
+11, 1.29, 1.17, 0.9117
+12, 1.40, 1.30, 0.9322
+13, 1.54, 1.51, 0.9789
+14, 1.72, 1.83, 1.0615
+15, 1.95, 2.33, 1.1935
+16, 2.25, 3.14, 1.3956
+17, 2.63, 4.47, 1.7009
+18, 3.12, 6.75, 2.1635
+19, 3.76, 10.81, 2.8744
+20, 4.60, 18.34, 3.9905
+21, 5.70, 32.99, 5.7895
+22, 7.17, 62.94, 8.7767
+23, 9.16, 127.27, 13.8996
+24, 11.86, 272.65, 22.9878
+25, 15.59, 618.59, 39.6871
+26, 20.78, 1485.71, 71.4941
+27, 28.11, 3776.01, 134.3285
+28, 38.58, 10151.67, 263.1177
+29, 53.74, 28860.47, 537.0653
+30, 75.96, 86737.81, 1141.8682
+31, 109.00, 275519.71, 2527.7957
+32, 158.79, 924829.21, 5824.2425
+33, 234.93, 3280099.32, 13962.1758
+34, 353.08, 12291611.15, 34812.7476
+35, 539.23, 48667136.20, 90252.9612
+36, 837.16, 203613654.30, 243220.5053
+37, 1321.75, 900310879.36, 681150.8952
+38, 2123.27, 4208193319.23, 1981942.1692
+39, 3472.16, 20799542355.93, 5990380.1649
+40, 5783.41, 108752709855.18, 18804245.4282
+41, 9818.31, 601818994785.79, 61295548.0504
+42, 17000.63, 3526816124338.59, 207452064.5637
+43, 30047.48, 21902092075506.60, 728916154.5381
+44, 54255.15, 144249834556119.44, 2658730801.4750
+45, 100179.38, 1008470609529045.50, 10066648684.1375
+46, 189355.77, 7491612515863756.00, 39563688023.8035
+47, 366816.75, 59204873811013576.00, 161401771664.9302
+48, 729211.11, 498404554000261376.00, 683484584906.9258
+49, 1489761.97, 4476051888411955712.00, 3004541642465.5044
+50, 3132837.11, 42956202959771787264.00, 13711597982787.7520
+51, 6793544.73, 441364308590886584320.00, 64968190585300.6016
+52, 15221892.85, 4865628745081280266240.00, 319646760931654.0625
+53, 35321715.51, 57690482461665818312704.00, 1633286538652312.0000
+54, 85100898.57, 737715436539927972544512.00, 8668715006678185.0000
+55, 213510647.76, 10206033528300543087214592.00, 47801051776383096.0000
+56, 559703675.35, 153310409576189932108513280.00, 273913530189737504.0000
+57, 1538991318.98, 2510933415789354510391967744.00, 1631544885807509504.0000
+58, 4458791752.39, 45054824117026016829596762112.00, 10104715945282095104.0000
+59, 13683918131.88, 890725095140554198507975606272.00, 65092840117599412224.0000
+60, 44767522947.23, 19532105867948426070837138817024.00, 436300795355008335872.0000
+61, 157321295487.30, 478900812471584578549685875113984.00, 3044094005126149701632.0000
+62, 599437296780.80, 13258231627484631397471839993200640.00, 22117795637152259768320.0000
+63, 2505575758976.87, 419522455382803187878095550997856256.00, 167435550044637733322752.0000
+64, 11662273888554.52, 15409485318625178175749614146729017344.00, 1321310532223755595284480.0000
+65, 61655737124426.24, 670558471048422593941024371217985961984.00, 10875848742107836806332416.0000
+66, 380488735516430.62, 35549678373933203389004624739769503449088.00, 93431618483218045720330240.0000
+67, 2852498540318694.50, 2391207663238171875654043203450686907875328.00, 838285324055245624358993920.0000
+68, 27684652222285696.00, 217628772964285529814187042344995800683118592.00, 7860989952732652466071404544.0000
+69, 390927717641023872.00, 30143521254601169449579685060079666952287551488.00, 77107659279051109923607805952.0000
+70, 10697203909995288576.00, 8470329472542970255118807798761766777299692158976.00, 791826494456970746996063207424.0000
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="the-professional">
+<h1>The Professional<a class="headerlink" href="#the-professional" title="Permalink to this headline">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="o">=</span><span class="mi">35</span>
+<span class="n">q</span><span class="o">=</span><span class="mi">7</span>
+
+<span class="n">n</span><span class="o">=</span><span class="mi">70</span>
+<span class="n">k</span><span class="o">=</span><span class="mi">22</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">betabinom</span>
+<span class="n">betabinom</span><span class="o">.</span><span class="n">sf</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">q</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">m</span><span class="o">-</span><span class="n">q</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1">#def BBProbability(q,m,n,k):</span>
+    
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.10921175190335641
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="section">
+   
+</div>
+
+            </article>
+            
+<!-- Add a comment box underneath the page's content -->
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://abocci.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Bayesian approach
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#individual-probability">
+     Individual probability
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#frequesntistic-approach">
+   Frequesntistic approach
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#integral-probablity">
+     Integral probablity
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-professional">
+   The Professional
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+          </div>
+        </footer>
+        
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1e1de1a1873e13ef5536"></script>
+
+  <footer class="bd-footer"><div class="bd-footer__inner container">
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2022, Andrea Bocci.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="sphinx-version">
+Created using <a href="http://sphinx-doc.org/">Sphinx</a> 4.5.0.<br>
+</p>
+
+  </div>
+  
+</div>
+  </footer>
+  </body>
+</html>

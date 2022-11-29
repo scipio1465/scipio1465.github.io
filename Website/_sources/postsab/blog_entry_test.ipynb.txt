@@ -1,0 +1,280 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "14fc8dae-a86a-4ac9-a2ec-e1883534adb0",
+   "metadata": {
+    "tags": []
+   },
+   "source": [
+    "# Test of blog entries"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f0d89339-ef7f-4a45-9d58-a09476ab9f24",
+   "metadata": {},
+   "source": [
+    "First write something\n",
+    "then something else\n",
+    "\n",
+    "$$\\sqrt{2}-2$$"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "abfb3bc0-beb5-44a9-9d5d-aaa490b6ea27",
+   "metadata": {
+    "tags": [
+     "hide_input"
+    ]
+   },
+   "outputs": [],
+   "source": [
+    "import pandas as pd"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "15ce12ae-ff7d-49ff-9b5e-57d0461ab8a7",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "/home/abocci/Dropbox/ML/JupiterNotebooks/sandbox\n"
+     ]
+    }
+   ],
+   "source": [
+    "!pwd"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "0fc3bcd2-0a23-475a-92aa-ec4c3b97a1b5",
+   "metadata": {},
+   "source": [
+    "Add another line"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "67f041e7-5645-41cd-a69d-f7f96bb8bda2",
+   "metadata": {},
+   "source": [
+    "```{note}\n",
+    "\n",
+    "this is a note\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "da7820c5-87a9-45eb-8ba2-47fa790ff765",
+   "metadata": {},
+   "source": [
+    ":::{sidebar} A code example\n",
+    "\n",
+    "With a sidebar on the right.\n",
+    ":::"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f34267c5-bed5-4925-ac9f-8c5d72a549f5",
+   "metadata": {},
+   "source": [
+    "![test](https://colab.research.google.com/assets/colab-badge.svg)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5f9fd21d-94cb-4229-9618-a74f980132e4",
+   "metadata": {},
+   "source": [
+    "![Alt text](https://cdn.sstatic.net/Sites/stackoverflowmeta/img/logo.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4ef1ab3f-145d-4e5a-b5bd-b4f2af7f371a",
+   "metadata": {},
+   "source": [
+    "## Raw cells\n",
+    "\n",
+    "The [raw cell type](https://nbformat.readthedocs.io/en/latest/format_description.html#raw-nbconvert-cells) can be used to specifically render the content as a specific [MIME media type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types).\n",
+    "\n",
+    "````markdown\n",
+    "```{raw-cell}\n",
+    ":format: text/html\n",
+    "\n",
+    "<p>My cat is <strong>very</strong> grumpy.</p>\n",
+    "```\n",
+    "````"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "a6d014ff-97f2-4297-931f-3b7e0f5acbaf",
+   "metadata": {
+    "format": "text/html",
+    "tags": []
+   },
+   "source": [
+    "<p>My cat is <strong>very</strong> grumpy.</p>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "506ea00b-e13e-4697-b4ba-3c400c72536e",
+   "metadata": {},
+   "source": [
+    "This is another roles {math}`e^{i\\pi} + 1 = 0` and {math}`a^2 + b^2 = c^2`\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "cb850ea7-f45a-4e01-bbcb-202f2dd2744f",
+   "metadata": {},
+   "source": [
+    "This is double quote ``double-quote``\n",
+    "This is double quote `double-quote`\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "54f0a745-d9f6-4c4c-94d3-ef5160a0e09b",
+   "metadata": {},
+   "source": [
+    "## Further tests"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4e57d6a8-0b9b-43ed-91aa-7708882f50bf",
+   "metadata": {},
+   "source": [
+    "<center> **Your Centered Text** </center>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6d13d7c3-ba3a-4353-ab74-5a3acf11bae2",
+   "metadata": {},
+   "source": [
+    "<mark>highlighted text</mark>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e16a0f0f-87c4-48e7-a01a-02a83a173a98",
+   "metadata": {},
+   "source": [
+    "\n",
+    "A nice [color generator is here](https://redketchup.io/color-picker)\n",
+    "\n",
+    "<div style = 'background-color:pink'> <center> TEXT WITH BACKGROUND COLOR </div>\n",
+    "    \n",
+    "    \n",
+    "    \n",
+    "<font color=#00F201>Maroon colored Text </font>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fd421516-626f-461c-82a8-6cf82f5ebab9",
+   "metadata": {},
+   "source": [
+    "#Blue Background\n",
+    "<div class=\"alert alert-info\"> Example text highlighted in blue background </div>\n",
+    "\n",
+    "#Green Background\n",
+    "<div class=\"alert alert-success\">Example text highlighted in green background.</div>\n",
+    "\n",
+    "#Yellow Background\n",
+    "<div class=\"alert alert-warning\">Example text highlighted in yellow background.</div>\n",
+    "\n",
+    "#Red Background\n",
+    "<div class=\"alert alert-danger\">Example text highlighted in red background.</div>"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b5e78497-3a3d-42b3-8fe2-1e6b68368dd8",
+   "metadata": {},
+   "source": [
+    "<u> Underlined Text </u>\n",
+    "\n",
+    "\n",
+    "&#10148; Bullet point one</br>\n",
+    "&#10143; Bullet point two</br>\n",
+    "&#10147; Bullet point three</br>\n",
+    "&#10145; Bullet point four</br>\n",
+    "&#10144; Bullet point five</br>\n",
+    "&#10142; Bullet point six</br>\n",
+    "&#10141; Bullet point seven</br>\n",
+    "&#10140; Bullet point eight</br>\n",
+    "\n",
+    "\n",
+    "More [symbols here](https://coolsymbol.com/)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "59b04282-8d8f-47ef-98c7-5d1993d27d14",
+   "metadata": {},
+   "source": [
+    "𝕋𝕪𝕡𝕖 𝕤𝕠𝕞𝕖𝕥𝕙𝕚𝕟𝕘 𝕥𝕠 𝕤𝕥𝕒𝕣𝕥 asdad\n",
+    "\n",
+    "∄\n",
+    "\n",
+    "𝕿𝖞𝖕𝖊 𝖘𝖔𝖒𝖊𝖙𝖍𝖎𝖓𝖌 𝖙𝖔 𝖘𝖙𝖆𝖗𝖙"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "92ef681a-923b-448b-b9f9-577e0264c631",
+   "metadata": {},
+   "source": [
+    "## 𝕿𝖞𝖕𝖊 𝖘𝖔𝖒𝖊𝖙𝖍𝖎𝖓𝖌 𝖙𝖔 𝖘𝖙𝖆𝖗𝖙\n",
+    "\n",
+    "😎\n",
+    "\n",
+    "The [fancy fonts are here](https://tools.picsart.com/text/font-generator/)"
+   ]
+  }
+ ],
+ "metadata": {
+  "author": "Andrea Bocci",
+  "interactive": true,
+  "kernelspec": {
+   "display_name": "Python [conda env:ds-base]",
+   "language": "python",
+   "name": "conda-env-ds-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  },
+  "redirect": "pandoc-jupyter-notebooks",
+  "tags": [],
+  "title": "Andrea test",
+  "toc-autonumbering": false,
+  "toc-showcode": false,
+  "toc-showmarkdowntxt": false
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

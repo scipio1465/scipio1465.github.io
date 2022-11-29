@@ -1,0 +1,31 @@
+# DS Posts
+
+
+ℙ𝕠𝕤𝕥𝕤 𝕒𝕓𝕠𝕦𝕥 𝔻𝕒𝕥𝕒 𝕊𝕔𝕚𝕖𝕟𝕔𝕖, 𝕊𝕥𝕒𝕥𝕚𝕤𝕥𝕚𝕔𝕤, 𝕒𝕟𝕕 𝕣𝕖𝕝𝕒𝕥𝕖𝕕 𝕥𝕠𝕡𝕚𝕔𝕤:
+
+
+
+
+```{postlist}
+:list-style: disc
+:date: "%B %d, %Y"
+:category: statistics
+:format: "{title} [{category}], {date}"
+:excerpts:
+:sort:
+```
+
+
+
+<!---
+```{postlist}
+:category: statistics
+:date: "%B %d, %Y"
+:FORMAT: " {TITLE}  [{CATEGORY}], {DATE} "
+:excerpts: 
+```
+
+
+Testina
+
+--->
