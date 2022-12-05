@@ -14,25 +14,29 @@ By design.
 </p></b></center>
 </div>
 
-I work in an Innovation Lab, hence this site follows a similar
-approach: I experiment different layouts and documentation frameworks
-to mumbling about data science and other (technical) topics that often
-includes code, plots or math equations.
+I work in tech, where there are always new stuff coming out to try and
+test. 
+
+This site follows a similar approach: I experiment different
+layouts and documentation frameworks to mumbling about data science
+and other (technical) topics that often includes code, plots or math
+equations.
 
 
 ### Why Sphinx?
 ```{image} https://www.sphinx-doc.org/en/master/_static/sphinxheader.png
 :class: bg-dark
 :align: center
+:height: 40
 :target: https://www.sphinx-doc.org/en/master/
 ```
 </br>
 
 
-There are plenty of static web page framework out there, in the past I
+There are plenty of static web page framework out there. In the past I
 was using [Pelican](https://getpelican.com/) (that actually I
-recommend!) for example, but in recent years I was accumulating notes
-in notebook format and my wish-list basically included:
+recommend!) for example, But in recent years I was accumulating notes
+in notebook format and my wish-list for a personal website/blog evolved to:
 
 * A pythonic framework
 * Pages in markdown, better with richer capability (like [reStructureText](https://docutils.sourceforge.io/rst.html))
@@ -52,8 +56,9 @@ markdown](https://rstudio.github.io/tufte/) and other stuff.
 But eventually I found [Sphinx](https://www.sphinx-doc.org/en/master/)
 with [PyData-sphinx-theme](https://pydata-sphinx-theme.readthedocs.io)
 as a good compromise. Also I was convinced by [this post from Chris
-Holdgraf](https://chrisholdgraf.com/blog/2020/sphinx-blogging/),
-which gives quite a few compelling arguments on using it.
+Holdgraf](https://chrisholdgraf.com/blog/2020/sphinx-blogging/), which
+gives quite a few compelling arguments on why using it as blog
+framework.
 
 <div class="alert alert-success">So, I did what any Data Scientist does to start from scratch a new
 project: <b>I forked a repository!</b>
@@ -62,7 +67,7 @@ project: <b>I forked a repository!</b>
 
 In my case [Chris Holdgraf web page](https://chrisholdgraf.com), that
 I profoundly thank for the excellent work and documentation about 
-his web site (_still I have to implement the GitHub Actions he uses to
+his web site (_I still have to implement the GitHub Actions he uses to
 automatize the deployment..._).
 
 ## Site Structure
@@ -83,14 +88,23 @@ page](https://chrisholdgraf.com))
 This will be a blog-style web site, but I will experiment with layouts.
 
 Data Science topics
-: Usual Medium-like articles, probably more advanced, on stuff I tried first hand or I like to discuss. Including Statistic and relevant math topics.
+: Usual Medium-like articles, probably more advanced, on stuff I tried
+  first hand or I like to discuss. Including Statistic and other relevant topics. 
 
 Project topics
-: Those may require multiple pages, and layout more similar to proper documentation or html-book. Experimenting in this area is actually one of the motivation to make this web site
+: Those may require multiple pages, and layout more similar to proper
+  documentation or html-book (thinking at [Jupyter
+Book](https://jupyterbook.org/en/stable/intro.html) or
+[Quarto](https://quarto.org/)  Experimenting in this area is actually
+  one of the motivation to make this web site
 
 Other topics
 : Again to experiment different layout, for example [Edward Tufte
-markdown](https://rstudio.github.io/tufte/), using old notebbok or other format I have. Mainly about data analysis of some interesting topic, or some math, astronomy or else.
+markdown](https://rstudio.github.io/tufte/), using old notes or other
+format I have. Mainly about data analysis of some interesting topics
+on the news or particularly popular (I have few Covid-related), always
+with a data spin.
+Or some math, astronomy or else.
 
 
 

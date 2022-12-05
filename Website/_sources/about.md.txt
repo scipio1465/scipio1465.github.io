@@ -55,20 +55,32 @@ Cluster Computing
 
 ML
 : Usually scikit-learn fits the bill, I like LightBGM for tabular
-  supervised learning, otherwise Tensorflow. I also like Bayesian
-  models (pyMC) and such. Working in telecommunication sector I've
-  been looking at Graph ML models and Geospatial  analysis. Plus of
-  course all other big DS topics that you need to know to have fun on
-  Kaggle!
+  supervised learning, otherwise Tensorflow ecosystem (but PyTorch 2.0
+  is arriving, maybe a reason to switch?). I also like Bayesian models
+  (pyMC) and such. Working in telecommunication sector I've been
+  looking at Graph ML models and Geospatial analysis, a two great
+  passions of mine. Plus of course all other big DS topics that you
+  need to know to have fun on Kaggle!
   
 MLOps:
-: To be honest, once you know the principles (CI/CD, pipelines, etc..)
+: To be honest, once you know the principles (CI/CD, pipelines, monitoring, etc..)
   any tool integrated in cloud services are usually good enough. I
   like MLFlow, and not only because is coming from the Spark
   ecosystem.
   
+Visualization:
+
+: I was a power user of Matplotlib/Seaborn, but now I'm totally a
+  plotly converted! If you try it, you won't go back. Still, I find
+  the HoloViz ecosystem projects quite intriguing, even beyond data
+  visualization. For Geo-related stuff I hope kepler will continue to
+  evolve as it is an interesting approach.
+
+
+
+
 Other:
-: GAN, synthetic data, differential privacy, explainable AI, and more...
+: GAN, synthetic data, differential privacy, explainable AI, and many more...
 
 
 
@@ -98,8 +110,7 @@ many other ways and **free** resources to do the same).
 
 I probably won't post much on the many other interests I have, with
 few exceptions that fit the case, for example if it's an excuse to do
-a little DS/tech project (as the _live_ Book Reading Logbook plot below)
-
+a little DS/tech project (as the [_live_ Book Reading Logbook plot below](book-log))
 Also I'll have some _math_ posts, as I want to experiment with latex,
 interactive/executable code, and I have many notes to be used as a source. 
 
@@ -112,7 +123,7 @@ not least because I'm a **puzzle addicted!**
 
 That's my badge on [Project Euler](https://projecteuler.net), an incredible site of challenging computational
 problems with a math-_ish_ spin. Brute force won't get you very far, you need some (actually **a lot** of)  ingenuity to simplify the problem enough to be able to compute
-the solution in a finite time with your laptop.
+the solution in a finite time.
 
 
 ## CV
@@ -155,7 +166,7 @@ O2](https://www.virginmediao2.co.uk/),
 ^^^
 
 Full stack Data Scientist working across the business to foster
-innovation and bring new technologies into the business. Some area I
+innovation and bring in new technologies. Some area I
 worked on:
 - ML model for customer credit risk
 - Insurance  claim propensity predictions
@@ -181,7 +192,7 @@ targeting use cases as drug repositioning
 **2006-2019**: Research Scientist at CERN
 ^^^
 
-Worked as part of the ATLAS international collaboration at
+Worked as a member of the ATLAS international collaboration at
 the **Large Hadron Collider** (LHC).
 
 Over the years I covered many roles on data quality, monitoring,
@@ -202,19 +213,20 @@ Gradated at the Rockefeller University, NY with a thesis on "_Search For Diboson
 
 
 ## What I Am Reading 
-
-I'm an avid reader, of all sort of topics, so my bandwidth for
-non-fiction books is limited. 
+(book-log)=
 
 If you are curious **on what I'm currently
-reading** and **at which page I am**, here it is:
+reading** and **at which page I am**, here it is (a sort of _embedded-dashboard_ if you're into buzzy terminology)
 
 ```{image} https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png
 :target:  https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png
 ```
 
 </br></br>
-This plot is updated **nightly** with an _Azure Function_. [In this post](panels-timeline.md) I explain the design and how I have implemented it. 
+
+This plot is updated **nightly** with an _Azure Function_. [In this
+post](panels-timeline.md) I explain the design of my **Book Reading
+Log** and how I have implemented it.
 
 
 
