@@ -246,6 +246,114 @@
     "\n",
     "The [fancy fonts are here](https://tools.picsart.com/text/font-generator/)"
    ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "bd3a7fcf-fdaf-4857-9984-f9af00a1b5a8",
+   "metadata": {},
+   "source": [
+    "## How to make central big tests\n",
+    "\n",
+    "This is how to make central big test like medium, as [reported in this blog post](https://medium.com/@kozyrkov/2022-a-productivity-revolution-f34f32a27e5b)\n",
+    "\n",
+    "Steps:\n",
+    "1. Pick the fonts from [fancy fonts are here](https://tools.picsart.com/text/font-generator/)\n",
+    "2. \n",
+    "\n",
+    "asdsd"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "813ccb17-b194-4bf5-acf6-e6efabc8a890",
+   "metadata": {},
+   "source": [
+    "</br>\n",
+    "<center>\n",
+    "<p style=\"font-size:180%;\">\n",
+    "    &ldquo;<i>Programmers now could tackle a wider <br> variety of tasks more effectively.</i>&rdquo;\n",
+    "</p>\n",
+    "</center>\n",
+    "</br>\n",
+    ":width: auto\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4d6c1231-217d-4595-b877-0399033b4f76",
+   "metadata": {},
+   "source": [
+    ":::{card} \n",
+    ":margin: 5\n",
+    ":text-align: center\n",
+    ":shadow: none\n",
+    "\n",
+    "Card content\n",
+    ":::\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "1fd6806b-80e1-45fc-b520-00dae7412bef",
+   "metadata": {},
+   "source": [
+    "## Tables with figures"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "94c46bd0-be2b-4ebf-96eb-68dd0dbfe50d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#![](../images/few_good_man.png)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "909dccba-39fb-4b0d-af84-d79c1ec59999",
+   "metadata": {},
+   "source": [
+    "---\n",
+    "```{eval-rst}\n",
+    "\n",
+    ".. list-table:: This is a list table with images in it.\n",
+    "    :widths: 70 30 \n",
+    "\n",
+    "\n",
+    "    * - \n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "\n",
+    "\n",
+    "           \n",
+    "      - .. figure:: ../images/few_good_man.png\n",
+    "\n",
+    "           zoom it\n",
+    "\n",
+    "    * - \n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "            some test here the continue here it is nice.             some test here the continue here it is nice\n",
+    "\n",
+    "\n",
+    "           \n",
+    "      - .. figure:: ../images/few_good_man.png\n",
+    "\n",
+    "           zoom it\n",
+    "\n",
+    "\n",
+    "\n",
+    "```"
+   ]
   }
  ],
  "metadata": {

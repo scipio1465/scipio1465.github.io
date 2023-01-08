@@ -9,7 +9,7 @@
 ```{postlist}
 :list-style: disc
 :date: "%B %d, %Y"
-:category: statistics
+:category: "['statistics', 'data science']"
 :format: "{title} [{category}], {date}"
 :excerpts:
 :sort:

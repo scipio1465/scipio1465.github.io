@@ -17,7 +17,7 @@ By design.
 I work in tech, where there are always new stuff coming out to try and
 test. 
 
-This site follows a similar approach: I experiment different
+This site follows a similar approach. I experiment different
 layouts and documentation frameworks to mumbling about data science
 and other (technical) topics that often includes code, plots or math
 equations.
@@ -34,9 +34,9 @@ equations.
 
 
 There are plenty of static web page framework out there. In the past I
-was using [Pelican](https://getpelican.com/) (that actually I
-recommend!) for example, But in recent years I was accumulating notes
-in notebook format and my wish-list for a personal website/blog evolved to:
+was using [Pelican](https://getpelican.com/) (highly
+recommended!) for example, But in recent years I was accumulating notes
+in notebook format and my wish-list for a personal website/blog evolved into including:
 
 * A pythonic framework
 * Pages in markdown, better with richer capability (like [reStructureText](https://docutils.sourceforge.io/rst.html))
@@ -45,27 +45,28 @@ in notebook format and my wish-list for a personal website/blog evolved to:
   proficient on properly/automatically documenting code, projects and
   libraries.
 
-Clearly there was nothing around that could fit all my requirements,
+Clearly there was nothing around that could really fit the bill,
 in particular in the popular [Jekyll](http://jekyllrb.com/) ecosystem,
 as I still want to experiment with [Jupyter
 Book](https://jupyterbook.org/en/stable/intro.html),
 [Quarto](https://quarto.org/), [Executable Books
 Project](https://executablebooks.org), [Edward Tufte
-markdown](https://rstudio.github.io/tufte/) and other stuff.
+markdown](https://rstudio.github.io/tufte/) and other stuff like that.
 
 But eventually I found [Sphinx](https://www.sphinx-doc.org/en/master/)
-with [PyData-sphinx-theme](https://pydata-sphinx-theme.readthedocs.io)
-as a good compromise. Also I was convinced by [this post from Chris
-Holdgraf](https://chrisholdgraf.com/blog/2020/sphinx-blogging/), which
-gives quite a few compelling arguments on why using it as blog
+with
+[PyData-sphinx-theme](https://pydata-sphinx-theme.readthedocs.io), a
+good compromise. [This post from Chris
+Holdgraf](https://chrisholdgraf.com/blog/2020/sphinx-blogging/)
+gives actually quite a few compelling arguments to use it as blog
 framework.
 
-<div class="alert alert-success">So, I did what any Data Scientist does to start from scratch a new
+<div class="alert alert-success">So I did what any Data Scientist does to start from scratch a new
 project: <b>I forked a repository!</b>
 </div>
 
 
-In my case [Chris Holdgraf web page](https://chrisholdgraf.com), that
+In my case [Chris Holdgraf web page](https://chrisholdgraf.com) that
 I profoundly thank for the excellent work and documentation about 
 his web site (_I still have to implement the GitHub Actions he uses to
 automatize the deployment..._).
@@ -95,16 +96,16 @@ Project topics
 : Those may require multiple pages, and layout more similar to proper
   documentation or html-book (thinking at [Jupyter
 Book](https://jupyterbook.org/en/stable/intro.html) or
-[Quarto](https://quarto.org/)  Experimenting in this area is actually
-  one of the motivation to make this web site
+[Quarto](https://quarto.org/))  Experimenting in this area is actually
+  one of the motivation to start this web site
 
 Other topics
 : Again to experiment different layout, for example [Edward Tufte
 markdown](https://rstudio.github.io/tufte/), using old notes or other
 format I have. Mainly about data analysis of some interesting topics
-on the news or particularly popular (I have few Covid-related), always
+on the news or particularly popular (I have few ones Covid-related), always
 with a data spin.
-Or some math, astronomy or else.
+Or some math. Or astronomy. Or else.
 
 
 

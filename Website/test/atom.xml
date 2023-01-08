@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://scipio1465.github.io/newdir</id>
   <title>Non-Abelian Journey</title>
-  <updated>2022-12-05T14:09:12.997864+00:00</updated>
+  <updated>2023-01-08T11:08:16.309620+00:00</updated>
   <link href="https://scipio1465.github.io/newdir"/>
   <link href="https://scipio1465.github.io/newdir/test/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.29">ABlog</generator>
@@ -22,5 +22,26 @@
     <category term="bayesian" label="bayesian"/>
     <category term="notebook" label="notebook"/>
     <published>2022-11-26T00:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://scipio1465.github.io/newdir/postsab/RyanairPricing/</id>
+    <title>Can We Outsmart Ryanair?</title>
+    <updated>2022-12-30T00:00:00+00:00</updated>
+    <author>
+      <name>Andrea Bocci</name>
+    </author>
+    <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
+&lt;p&gt;𝘛𝘩𝘪𝘴 𝘱𝘰𝘴𝘵 𝘸𝘢𝘴 𝘤𝘰𝘯𝘤𝘦𝘪𝘷𝘦𝘥 𝘢𝘯𝘥 𝘸𝘳𝘪𝘵𝘵𝘦𝘯 𝘢𝘴 𝘢 𝘵𝘩𝘦𝘳𝘢𝘱𝘺 𝘵𝘰 𝘵𝘳𝘦𝘢𝘵 𝘢𝘯 𝘦𝘹𝘤𝘳𝘶𝘤𝘪𝘢𝘵𝘪𝘯𝘨 𝘰𝘶𝘵𝘣𝘶𝘳𝘴𝘵 𝘰𝘧 𝘢𝘯𝘨𝘦𝘳 𝘐 𝘩𝘢𝘥 𝘸𝘩𝘦𝘯 𝘐 𝘱𝘢𝘪𝘥 200£ 𝘧𝘰𝘳 𝘢 𝘰𝘯𝘦-𝘸𝘢𝘺 𝘵𝘪𝘤𝘬𝘦𝘵. “𝘍𝘰𝘰𝘭 𝘮𝘦 𝘰𝘯𝘤𝘦, 𝘴𝘩𝘢𝘮𝘦 𝘰𝘯 𝘺𝘰𝘶; 𝘧𝘰𝘰𝘭 𝘮𝘦 𝘵𝘸𝘪𝘤𝘦, 𝘴𝘩𝘢𝘮𝘦 𝘰𝘯 𝘮𝘦”.&lt;br /&gt;
+𝘛𝘩𝘦 𝘥𝘢𝘵𝘢 𝘴𝘤𝘪𝘦𝘯𝘵𝘪𝘴𝘵 𝘸𝘢𝘺.&lt;/p&gt;
+&lt;/div&gt;
+</content>
+    <link href="https://scipio1465.github.io/newdir/postsab/RyanairPricing/" rel="alternate"/>
+    <summary>𝘛𝘩𝘪𝘴 𝘱𝘰𝘴𝘵 𝘸𝘢𝘴 𝘤𝘰𝘯𝘤𝘦𝘪𝘷𝘦𝘥 𝘢𝘯𝘥 𝘸𝘳𝘪𝘵𝘵𝘦𝘯 𝘢𝘴 𝘢 𝘵𝘩𝘦𝘳𝘢𝘱𝘺 𝘵𝘰 𝘵𝘳𝘦𝘢𝘵 𝘢𝘯 𝘦𝘹𝘤𝘳𝘶𝘤𝘪𝘢𝘵𝘪𝘯𝘨 𝘰𝘶𝘵𝘣𝘶𝘳𝘴𝘵 𝘰𝘧 𝘢𝘯𝘨𝘦𝘳 𝘐 𝘩𝘢𝘥 𝘸𝘩𝘦𝘯 𝘐 𝘱𝘢𝘪𝘥 200£ 𝘧𝘰𝘳 𝘢 𝘰𝘯𝘦-𝘸𝘢𝘺 𝘵𝘪𝘤𝘬𝘦𝘵. “𝘍𝘰𝘰𝘭 𝘮𝘦 𝘰𝘯𝘤𝘦, 𝘴𝘩𝘢𝘮𝘦 𝘰𝘯 𝘺𝘰𝘶; 𝘧𝘰𝘰𝘭 𝘮𝘦 𝘵𝘸𝘪𝘤𝘦, 𝘴𝘩𝘢𝘮𝘦 𝘰𝘯 𝘮𝘦”.&lt;br /&gt;
+\\
+𝘛𝘩𝘦 𝘥𝘢𝘵𝘢 𝘴𝘤𝘪𝘦𝘯𝘵𝘪𝘴𝘵 𝘸𝘢𝘺.</summary>
+    <category term="dataanalysis" label="data analysis"/>
+    <category term="notebook" label="notebook"/>
+    <category term="visualization" label="visualization"/>
+    <published>2022-12-30T00:00:00+00:00</published>
   </entry>
 </feed>

@@ -27,11 +27,11 @@ innovation across the business.
 
 In my role I leverage the data asset of the company to solve
 challenging problems, increase competitiveness with ML models and
-predicting analytics, mitigate risks and optimize processes working
+predicting analytics, mitigate risks and optimize processes,and  working
 horizontally across the business.
 
 New ideas and approaches are channeled in proof of concept solutions that
-eventually can be scaled and expanded to production.
+eventually can be scaled to production and/or extended in scope.
 ```
 
 
@@ -41,10 +41,12 @@ eventually can be scaled and expanded to production.
 
 </br>
 
-I think the back of my _"battlefield"_ laptop speaks for itself. I use
+Probably the back of my _"battlefield"_ laptop speaks for itself.   
+
+I use
 and experiment all kind of frameworks, tools and libraries. As a
 lifelong Linux user, I give a preference to open source products, but
-in general I take whatever fit best for my purpose. 
+in general I take whatever fits best for my purpose. 
 
 Cloud Services
 : I used Azure for some projects, but I've been more on GCP recently
@@ -63,7 +65,7 @@ ML
   need to know to have fun on Kaggle!
   
 MLOps:
-: To be honest, once you know the principles (CI/CD, pipelines, monitoring, etc..)
+: To be honest, once you know the principles (testing, CI/CD, pipelines, monitoring, etc..)
   any tool integrated in cloud services are usually good enough. I
   like MLFlow, and not only because is coming from the Spark
   ecosystem.
@@ -98,19 +100,19 @@ In general **I don't believe in any form of "_proof_" of knowledge**, be
 it an academic degree or a professional certification. 
 
 But since my company has been generously sponsoring (_a.k.a._ paying) for
-them, well, why not! And I didn't regret it the effort as I learned a lot
+them, well, why not! And I didn't regret it, I learned a lot
 preparing for them! 
 
 They are not a _proof_ of your knowledge, but
 surely they are a _mean_ to improve your knowledge! (although there are
-many other ways and **free** resources to do the same).
+many other **free** resources to do the same).
 
 
 ## Other interests
 
 I probably won't post much on the many other interests I have, with
-few exceptions that fit the case, for example if it's an excuse to do
-a little DS/tech project (as the [_live_ Book Reading Logbook plot below](book-log))
+few exceptions, for example if it's an excuse to do
+a little DS/tech project (as the [_live_ Book Reading Logbook plot below](book-log)).
 Also I'll have some _math_ posts, as I want to experiment with latex,
 interactive/executable code, and I have many notes to be used as a source. 
 
@@ -215,8 +217,9 @@ Gradated at the Rockefeller University, NY with a thesis on "_Search For Diboson
 ## What I Am Reading 
 (book-log)=
 
-If you are curious **on what I'm currently
-reading** and **at which page I am**, here it is (a sort of _embedded-dashboard_ if you're into buzzy terminology)
+If you are curious about **which books** I've been 
+reading and **at which page** I currently am, here it is!   
+(a sort of _embedded-dashboard_ if you're into buzzy terminology)
 
 ```{image} https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png
 :target:  https://abprojects.blob.core.windows.net/webpage-hd/ReadingLogPlot.png
