@@ -221,8 +221,8 @@ If you are curious about **which books** I've been
 reading and **at which page** I currently am, here it is!   
 (a sort of _embedded-dashboard_ if you're into buzzy terminology)
 
-```{image} https://uc87cffa690ff5633ab75f9e231a.dl.dropboxusercontent.com/cd/0/inline/B1oDosrq9S17-DNyBUZfNhsZHZnthZV5HKl0XoRS5iqAldoTLZbXcxkqwfEO7xa6h6dpGjF63JqU7GVJyqORC3WYvBeyt-Vd46yL8lj8NolK_F2QCg8i87NWn97uKAnnG5d5Gzh2NBGhFHv3RZ5RXZD_H8sOFrgNhOMsoO3YGwN1Bw/file#
-:target:  https://uc87cffa690ff5633ab75f9e231a.dl.dropboxusercontent.com/cd/0/inline/B1oDosrq9S17-DNyBUZfNhsZHZnthZV5HKl0XoRS5iqAldoTLZbXcxkqwfEO7xa6h6dpGjF63JqU7GVJyqORC3WYvBeyt-Vd46yL8lj8NolK_F2QCg8i87NWn97uKAnnG5d5Gzh2NBGhFHv3RZ5RXZD_H8sOFrgNhOMsoO3YGwN1Bw/file#
+```{image} https://drive.google.com/uc?export=view&id=1hle7eL5KwgIK1c7y1u3Lee6ulREx2oeO
+:target: https://drive.google.com/uc?export=view&id=1hle7eL5KwgIK1c7y1u3Lee6ulREx2oeO
 ```
 
 </br></br>
@@ -231,6 +231,17 @@ This plot is updated **nightly** with an _Azure Function_. [In this
 post](panels-timeline.md) I explain the design of my **Book Reading
 Log** and how I have implemented it.
 
+
+<!---
+
+https://drive.google.com/file/d/[image_id]/view?usp=sharing 
+
+to
+
+
+https://drive.google.com/uc?export=view&id=[image_id]. 
+
+--->
 
 
 
